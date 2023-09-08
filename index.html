@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amritesh-web developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(2, 2, 52);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      main hr {
+        border: 0;
+        background-color: rgb(153, 153, 226);
+        height: 1.7px;
+        margin: 40px 84px;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(3, 3, 72);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(170, 170, 248);
+        font-size: 1.04rem;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        margin: 140px 0;
+        align-items: center;
+        height: 75vh;
+      }
+      .firstsection > div {
+        width: 40%;
+      }
+      .leftsection {
+        font-size: 2.7rem;
+      }
+      .rightsection img {
+        width: 80%;
+      }
+      .purple {
+        color: rgb(192, 141, 240);
+      }
+      #element {
+        color: rgb(192, 141, 240);
+      }
+      .secondsection {
+        max-width: 80%;
+        margin: auto;
+      }
+
+      /*-------about---------*/
+
+      #about {
+        padding: 80px 0;
+        color: #ababab;
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .about-col-1 {
+        flex-basis: 35%;
+        margin: auto;
+      }
+
+      .about-col-1 img {
+        width: 100%;
+        border-radius: 15px;
+      }
+
+      .about-col-2 {
+        flex-basis: 60%;
+      }
+
+      .sub-title {
+        font-size: 60px;
+        font-weight: 600;
+        color: #fff;
+      }
+
+      .tab-titles {
+        display: flex;
+        margin: 20px 0px 40px;
+      }
+
+      .tab-links {
+        margin-right: 50px;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+        position: relative;
+      }
+
+      .tab-links::after {
+        content: " ";
+        width: 0;
+        height: 3px;
+        background: #ff004f;
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        transition: 0.5s;
+      }
+
+      .tab-links.active-link::after {
+        width: 50%;
+      }
+
+      .tab-contents ul li {
+        list-style: none;
+        margin: 10px 0;
+      }
+      .tab-contents ul li span {
+        color: #e883a3;
+        font-size: 14px;
+      }
+      .tab-contents {
+        display: none;
+      }
+      .tab-contents.active-tab {
+        display: block;
+      }
+
+      /*---------footer---------*/
+      footer {
+        background-color: rgb(7, 2, 11);
+        
+      }
+      .footer{
+        display: flex;
+        padding: 23px 60px;
+        justify-content:space-evenly;
+      }
+      .text-centre{
+        text-align: center;
+        padding: 20px;
+      }
+      .first-footer a{
+        text-decoration: none;
+        color: rgb(62, 0, 128);
+        font-size: 1.3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Amritesh Wagh</div>
+        <div class="right">
+          <a href=""></a>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Abou</a>t</li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Contacts</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          Hi My name is <span class="purple">Amritesh </span>
+          <div>and i am web passionate</div>
+          <div>Web Developer</div>
+          <span id="element"></span>
+        </div>
+        <div class="rightsection">
+          <img
+            src="Deshmukh Studio_abhisekh_Candid_ (1106).jpg"
+            alt="loading"
+            srcset=""
+          />
+        </div>
+      </section>
+      <hr />
+      <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="Deshmukh Studio_abhisekh_Candid_ (151).jpg" />
+            </div>
+            <div class="about-col-2">
+              <h1 class="sub-title">About Me</h1>
+              <p>
+                Enthusiastic Civil Engineering graduate with a passion for
+                problem-solving and technology. Proficient in programming
+                languages such as C and C++. Solid understanding of data
+                structures, algorithms, and database management. Eager to apply
+                academic knowledge to real-world projects. Strong collaborator
+                with excellent communication skills. Ready to contribute
+                effectively to innovative software solutions.
+              </p>
+
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">
+                  Skills
+                </p>
+                <p class="tab-links" onclick="opentab('experience')">
+                  Experience
+                </p>
+                <p class="tab-links" onclick="opentab('education')">
+                  Education
+                </p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li>
+                    <span>Languages</span><br />C/C++, Html, CSS, JavaScript,
+                    MySQL
+                  </li>
+                  <li>
+                    <span>Soft Skills</span><br />Teamwork, Problem Solving,
+                    Leadership
+                  </li>
+                  <li>
+                    <span>Areas of Interest</span><br />Web Development,
+                    Programming
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li><span>president</span><br />NSS IET DAVV</li>
+                  <li><span>Vice-President</span><br />E-Cell IET DAVV</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li>
+                    <span>Institute of Engineering and Technology , DAVV</span
+                    ><br />Bachelor of Engineering
+                  </li>
+                  <li><span>•Burhanpur Public School</span><br />C.B.S.E</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="first-footer">
+          <h1>Amritesh Developer Portfolio</h1>
+        </div>
+        <div class="first-footer">
+          <a href="waghamritesh@gmail.com" target="_blank">Email</a>
+        </div>
+        <div class="first-footer">
+          <a href="https://www.linkedin.com/in/amritesh-wagh-03713822b/" target="_blank">linkedin Profile</a>
+        </div>
+        <div class="first-footer">
+          <a href="https://www.instagram.com/amritesh.wagh.9847/" target="_blank">Instagram</a>
+        </div>
+      </div>
+      <div class="text-centre">
+        copywrite &#169;www.AmriteshPortfolio.com || All rights reserved
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Data analyst"],
+        typeSpeed: 50,
+      });
+    </script>
+    
+<script type="text/javascript" src="script.js"></script>
+
+  
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyCaFhlQdv4N5EarMajKlh3G5gdeQ4dW9aRKRDq5N2w512MNPtEtZmHT8Y0y4t4V8te/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  </body>
+</html>
