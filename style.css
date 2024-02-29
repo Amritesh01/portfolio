@@ -306,4 +306,8 @@ footer {
   color: rgb(170, 170, 248);
   font-size: 1.4rem;
 }
+.info{
+  display: flex;
+  flex-direction: column;
+}
 
